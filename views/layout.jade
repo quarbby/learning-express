@@ -1,0 +1,53 @@
+doctype html
+html
+  head
+    title TWW
+
+    link(rel='stylesheet', href='/css/style.css')
+    script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js")
+    script(src="//code.jquery.com/jquery-3.1.1.min.js")
+    script(src="//cdn.socket.io/socket.io-1.1.0.js")
+    
+    <!-- Leaflet -->
+    script(src='//unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js')
+    script(src='/javascripts/ext/leaflet-providers.js')
+    link(rel='stylesheet' href='//unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css')
+    
+    link(rel='stylesheet', href='/L.awesomemarkers/font-awesome-4.6.3/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/L.awesomemarkers/dist/leaflet.awesome-markers.css')
+    script(src='/L.awesomemarkers/dist/leaflet.awesome-markers.js')
+    script(src='/javascripts/ext/leaflet-bouncemarker.js')
+    script(src='//leaflet.github.io/Leaflet.draw/leaflet.draw.js')
+    link(rel='stylesheet', href='//leaflet.github.io/Leaflet.draw/leaflet.draw.css')
+    
+    script(src='/Leaflet.markercluster/dist/leaflet.markercluster.js')
+    link(rel='stylesheet', href='/Leaflet.markercluster/dist/MarkerCluster.css')
+    link(rel='stylesheet', href='/Leaflet.markercluster/dist/MarkerCluster.Default.css')
+    
+    <!-- Bootstrap -->
+    script(src='/javascripts/ext/bootstrap.min.js')
+    link(rel='stylesheet', href='/javascripts/ext/bootstrap.min.css')
+    
+    <!-- Custom -->
+    script(src='/javascripts/globals.js')
+    //script(src='../node_modules/dist/async.js')
+
+  body
+    nav.navbar.navbar-default.navbar-fixed-top
+      div.container
+        div.navbar-header
+          a.navbar-brand(href="/") HELLO, I'm ALICE
+        div.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active.nav-map
+              a(href="/") Suzy
+            li.nav-instagram
+              a(href="/instagram") Bob
+            //-li.nav-second
+              a(href="#") Second
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href="#") Login
+
+    
+    block content

@@ -1,0 +1,2 @@
+sudo mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@" &
+sudo mongo tww --eval "db.dropDatabase();"

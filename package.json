@@ -1,0 +1,33 @@
+{
+  "name": "tw",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build-css": "./bin/build-css",
+    "watch-css": "./bin/watch-css",
+    "mongod": "./bin/mongodb/mongod",
+    "mongod-repair": "./bin/mongodb/mongod-repair",
+    "mongod-clear": "./bin/mongodb/mongod-clear-db",
+    "start": "npm run build-css && node ./bin/www"
+  },
+  "dependencies": {
+    "async": "^2.0.1",
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "jade": "~1.11.0",
+    "keyword-extractor": "0.0.13",
+    "leaflet-draw": "^0.3.2",
+    "leaflet.markercluster": "^1.0.0",
+    "moment-timezone": "^0.5.5",
+    "morgan": "~1.7.0",
+    "ntwitter": "^0.5.0",
+    "phantom": "^2.1.21",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "node-sass": "^3.10.0",
+    "nodemon": "^1.10.2"
+  }
+}

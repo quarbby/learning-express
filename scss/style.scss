@@ -1,0 +1,408 @@
+$padding-top: 50px;
+$teal-color: #009688;
+$thin-grey-border-bottom: thin solid #cdc9c9;
+
+html {
+  height: 100%;
+}
+
+body {
+  padding-top: $padding-top;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.col-sm-3 h1 {
+  color: $teal-color;
+  font-size: 1.2em;
+  font-weight: Bold;
+}
+
+/* For Nav Bar */
+nav {
+  
+  .navbar.navbar-default {
+    background-color: #4DB6AC;
+  }
+  
+  a {
+    cursor: pointer; 
+  }
+
+  .navbar-default.navbar-brand {
+    color: white;
+  }
+
+}
+
+
+/* For side bar */
+
+$side-bar-width: 300px;
+
+#side-bar {
+  color: #5f9ea0;
+  float: left;
+  width: $side-bar-width;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#right-bar {
+  margin-left: $side-bar-width;
+}
+
+$analysis-height: 200px;
+
+#analysis {
+  max-height: $analysis-height + $padding-top;
+  border-bottom: thin solid #cdc9c9;
+}
+
+#map { 
+  margin-top: 5px;
+  height: calc( 100vh - (#{$analysis-height} + 110px));
+  //margin-left: $side-bar-width;
+}
+
+/** For frequent users display **/
+$user-header-width: 48px;
+$user-margin: 10px;
+
+#frequent-users-text {
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-top: thick solid lightgreen;
+  max-height: $analysis-height;
+}
+
+.frequent-user-display {
+  min-height: $user-margin + $user-header-width;
+  border-bottom: $thin-grey-border-bottom;
+  cursor: pointer; 
+  
+  .user-header a {
+    text-decoration: none;
+  }
+
+  .user-header a img.user-pic {
+    float: left;
+    margin-top: 3px;
+    margin-right: $user-margin;
+    width: $user-header-width;
+    height: $user-header-width;
+  }
+  
+  .user-header a img.user-pic {
+    float: left;
+    margin-top: 3px;
+    margin-right: $user-margin;
+    width: $user-header-width;
+    height: $user-header-width;
+  }  
+  
+  .user-body span.username {
+    font-weight: bold;
+  }
+  
+  .user-body {
+    margin-left: $user-header-width + $user-margin;
+    margin-bottom: 2px;
+  }  
+  
+  .user-footer {
+    margin-left: $user-header-width + $user-margin;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-collapse: collapse;
+  }
+  
+  .user-footer span.count {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #666666;
+  }  
+  
+}
+
+/* For tweet */
+.tweet {
+  width: 300px;
+  padding: 5px 5px 0 5px;
+  box-shadow: 0 5px 4px -6px black;
+  
+  .tweet-header {
+    min-height: 50px;
+  }
+  
+  .tweet-header a:link {
+    text-decoration: none;
+  }
+
+  .tweet-header img {
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-right: 2px;
+  }
+
+  .tweet-body {
+    border-top: thin solid #cdc9c9;
+    font-size: 0.8em;
+    color: black;
+    margin-left: 52px;
+  }
+  
+  .tweet-body a:link {
+    margin-left: 52px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .username {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .timestamp {
+    font-weight: bold;
+    font-size: 0.7em;
+  }
+
+  .tweet-footer {
+    padding-top: 2px;
+    font-size: 0.7em;
+    background-color: #f5f5f5;
+  }
+  
+  .tweet-footer i {
+    margin-left: 52px;
+  }
+  
+  .location {
+    padding-left: 3px;
+    cursor: pointer; 
+  }
+  
+}
+
+
+/* For word tweet (Darrel)*/
+.tweet-word {
+  width: 470px;
+  padding: 5px 5px 0 5px;
+  box-shadow: 0 5px 4px -6px black;
+  
+  .tweet-header {
+    min-height: 50px;
+  }
+  
+  .tweet-header a:link {
+    text-decoration: none;
+  }
+
+  .tweet-header img {
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-right: 2px;
+  }
+
+  .tweet-body {
+    border-top: thin solid #cdc9c9;
+    font-size: 0.8em;
+    color: black;
+    margin-left: 52px;
+  }
+  
+  .tweet-body a:link {
+    margin-left: 52px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .username {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .timestamp {
+    font-weight: bold;
+    font-size: 0.7em;
+  }
+
+  .tweet-footer {
+    padding-top: 2px;
+    font-size: 0.7em;
+    background-color: #f5f5f5;
+  }
+  
+  .tweet-footer i {
+    margin-left: 52px;
+  }
+  
+  .location {
+    padding-left: 3px;
+    cursor: pointer; 
+  }
+  
+}
+
+/* For Frequent Words Style */
+#frequent-words-text {
+  border-top: thick solid #ffe4c4;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#analysisText {
+  margin-left:3px;
+}
+
+.btn-size {
+  width :100px;
+  height: 40px;
+  margin-top: 5px;
+}
+
+.btn-cross {
+  margin-top: 5px;
+  height: 40px;
+}
+
+#event-monitor {
+  border-top: thick solid lightblue;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.box-body {
+  margin: 3px;
+  color: black;
+  font-size: 0.8em;
+}
+
+.word {
+  font-weight: bold;
+}
+
+.word-body {
+  border-bottom: thin solid #cdc9c9;
+  margin: none;
+}
+
+/* For Modal */
+.modal {
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  color: #191970;
+  
+  position: fixed;
+  top: 30% !important;
+  left: 30% !important;
+  
+  .modal-header {
+    padding-left:5%;
+  }
+  
+  .top {
+    border: thin solid $teal-color;
+    width:464px;
+    height:130px;
+    margin-top:20px;
+    padding:3%;
+  }
+  
+  .padrow {
+    padding-left:10px;
+  }
+
+  .modal-profilepic {
+    width: 50px;
+    height: 50px;
+    /*Darrel Add*/
+    margin-top:30px;
+  }
+  
+  .modal-information {
+    //border-bottom: thin solid #cdc9c9;
+    margin-bottom: 5px;
+  }
+  
+  .modal-stats {
+    
+    border: thin solid $teal-color; 
+    width:464px;
+    padding:1%;
+    
+    .stats-count {
+      font-weight: bold;
+      font-size: 1.5em;
+      
+      margin-bottom: 5px;
+    }
+    
+    .stats-words {
+      font-weight:bold;
+    }
+  }
+  
+  .modal-body {
+    h1 {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: $teal-color;
+    }
+    
+    .modal-tweet-body {
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    
+  }
+  .align-text{
+    text-align: center;
+    color: $teal-color;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+}
+
+/* For is */
+#instagram-form {
+  margin-left: 10%;  margin-right: 10%;
+  
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.location-header {
+  color: $teal-color;
+  font-size: 1.8em;
+  margin-left: 30%;
+}
+
+.instagram-box {
+  width: 60px;
+  height: 100px;
+  background-color: white;
+
+  .instagram-img img {
+    width: 50px;
+    height: 50px;
+    padding-bottom: 5px;
+  }
+  
+  .instagram-caption {
+    background-color: grey;
+  }
+ 
+}

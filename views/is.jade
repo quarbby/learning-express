@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    div.instagram
+        form#instagram-form
+            div.row
+                div.col-md-3
+                    div.dropdown
+                        button.btn.btn-default-dropdown-toggle(type="button" id="instagramDropdownBtn" data-toggle="dropdown" aria-haspopup="true" aria-expended="true") Page Type 
+                            span.caret
+                        ul.dropdown-menu(aria-labelledby="dropdownMenu1" role="menu")
+                            li Location
+                            li Person
+                            li Hashtag
+                div.col-md-3
+                    input.form-control#instagram-input(type="text" placeholder="Input Location Number e.g. 274029466: ")
+                div.col-md-3
+                    button.btn.btn-primary#streaming-button(onclick="streamingButtonClicked()") Start Streaming
+    div.location-header
+    div.container-fluid.instagram-posts
+    
+    //script(src='/node_modules/async/dist/async.js')
+    script(src='/javascripts/instagram.js')

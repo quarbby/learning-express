@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  div.side-bar
+    p#latest-tweets-text
+  div#container-fluid
+    div.col-md-4
+      //div#frequent-words-text
+      div.box-style
+        div.container.box-header
+          h1 Frequent Words
+        div.box-body
+          div.container-fluid#word-container
+    div.col-md-4
+      div#frequent-users-text
+
+  script(src='//d3js.org/d3.v3.min.js')
+  script(src='/javascripts/ext/d3-wordcloud.js')
+  script(src='/javascripts/analysis.js')
+  script(src='/javascripts/words.js')

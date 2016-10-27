@@ -1,0 +1,98 @@
+extends layout
+
+block content
+  div#side-bar
+    p#latest-tweets-text
+  div#right-bar
+    div.container-fluid
+      div.row#analysis
+        div.col-sm-3
+          h1#analysisText Frequent Words 
+          div.box-body
+            div#frequent-words-text
+        div.col-sm-3
+          h1#analysisText Most Active Users
+          div.box-body
+            div#frequent-users-text
+        div.col-sm-3
+          h1 Event Monitor
+          div#event-monitor
+            div.form-group
+              label Input event keywords: 
+              input.form-control#event-input(type="text")
+            div.event-btn-group
+              div.btn-group
+                button.btn.btn-success.btn-size(onclick="openWordModal()"  data-target="#wordModal" data-toggle="modal") Singapore
+                button.btn.btn-success.btn-cross.btn-remove
+                  i.fa.fa-times
+              div.btn-group
+                button.btn.btn-success.btn-size(onclick="openWordModal()"  data-target="#wordModal" data-toggle="modal") Aaa
+                button.btn.btn-success.btn-cross.btn-remove
+                  i.fa.fa-times                  
+      div.row
+        div#map
+  
+  // Modal
+  div.modal(id="myModal")
+    .modal-header
+      button(type="button", class="close", data-dismiss="modal") x
+      div.row.padrow
+        div.top.well
+          div.col-md-2
+            img.modal-profilepic
+          div.col-md-10
+            div.modal-information
+              div 
+                span.col-xs-4
+                  b Screenname: 
+                span.col-xs-8#modal-screenname
+              div
+                span.col-xs-4
+                  b Userid:
+                span.col-xs-8#modal-userid
+              div
+                span.col-xs-4
+                  b Created At: 
+                span.col-xs-8#modal-createdat
+              div
+                span.col-xs-4
+                  b Location: 
+                span.col-xs-8#modal-location
+        div.modal-stats.well
+          div.row
+            div.col-xs-3
+              span.modal-followerscount.stats-counts
+            div.col-xs-3
+              span.modal-friendscount.stats-counts
+            div.col-xs-3
+              span.modal-statusescount.stats-counts
+            div.col-xs-3
+              span.modal-favouritecount.stats-counts
+          div.row
+            div.col-xs-3
+              span.stats-words Followers
+            div.col-xs-3
+              span.stats-words Friends
+            div.col-xs-3
+              span.stats-words Statuses
+            div.col-xs-3
+              span.stats-words Favourites            
+    .modal-body
+      h1 Latest Tweets
+      p.modal-tweet-body
+    .modal-footer
+      p Last Updated
+      button.view-on-twitter-button View on Twitter
+      
+  // Word Modal
+  div.modal(id="wordModal")
+    .modal-header
+      button(type="button", class="close", data-dismiss="modal") x
+      p.align-text Words Containing Singapore
+    .modal-body
+      div.modal-tweets
+    .modal-footer
+  
+  script(src='/data/words.js')
+  script(src='/javascripts/analysis.js')
+  script(src='/javascripts/map.js')

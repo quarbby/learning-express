@@ -1,0 +1,276 @@
+html {
+  height: 100%; }
+
+body {
+  padding-top: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0; }
+
+a {
+  color: #00B7FF; }
+
+.col-sm-3 h1 {
+  color: #009688;
+  font-size: 1.2em;
+  font-weight: Bold; }
+
+/* For Nav Bar */
+nav .navbar.navbar-default {
+  background-color: #4DB6AC; }
+
+nav a {
+  cursor: pointer; }
+
+nav .navbar-default.navbar-brand {
+  color: white; }
+
+/* For side bar */
+#side-bar {
+  color: #5f9ea0;
+  float: left;
+  width: 300px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+#right-bar {
+  margin-left: 300px; }
+
+#analysis {
+  max-height: 250px;
+  border-bottom: thin solid #cdc9c9; }
+
+#map {
+  margin-top: 5px;
+  height: calc( 100vh - (200px + 110px)); }
+
+/** For frequent users display **/
+#frequent-users-text {
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-top: thick solid lightgreen;
+  max-height: 200px; }
+
+.frequent-user-display {
+  min-height: 58px;
+  border-bottom: thin solid #cdc9c9;
+  cursor: pointer; }
+  .frequent-user-display .user-header a {
+    text-decoration: none; }
+  .frequent-user-display .user-header a img.user-pic {
+    float: left;
+    margin-top: 3px;
+    margin-right: 10px;
+    width: 48px;
+    height: 48px; }
+  .frequent-user-display .user-header a img.user-pic {
+    float: left;
+    margin-top: 3px;
+    margin-right: 10px;
+    width: 48px;
+    height: 48px; }
+  .frequent-user-display .user-body span.username {
+    font-weight: bold; }
+  .frequent-user-display .user-body {
+    margin-left: 58px;
+    margin-bottom: 2px; }
+  .frequent-user-display .user-footer {
+    margin-left: 58px;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-collapse: collapse; }
+  .frequent-user-display .user-footer span.count {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #666666; }
+
+/* For tweet */
+.tweet {
+  width: 300px;
+  padding: 5px 5px 0 5px;
+  box-shadow: 0 5px 4px -6px black; }
+  .tweet .tweet-header {
+    min-height: 50px; }
+  .tweet .tweet-header a:link {
+    text-decoration: none; }
+  .tweet .tweet-header img {
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-right: 2px; }
+  .tweet .tweet-body {
+    border-top: thin solid #cdc9c9;
+    font-size: 0.8em;
+    color: black;
+    margin-left: 52px; }
+  .tweet .tweet-body a:link {
+    margin-left: 52px;
+    text-decoration: none;
+    color: black; }
+  .tweet .username {
+    font-weight: bold;
+    text-align: left; }
+  .tweet .timestamp {
+    font-weight: bold;
+    font-size: 0.7em; }
+  .tweet .tweet-footer {
+    padding-top: 2px;
+    font-size: 0.7em;
+    background-color: #f5f5f5; }
+  .tweet .tweet-footer i {
+    margin-left: 52px; }
+  .tweet .location {
+    padding-left: 3px;
+    cursor: pointer; }
+
+/* For word tweet (Darrel)*/
+.tweet-word {
+  width: 470px;
+  padding: 5px 5px 0 5px;
+  box-shadow: 0 5px 4px -6px black; }
+  .tweet-word .tweet-header {
+    min-height: 50px; }
+  .tweet-word .tweet-header a:link {
+    text-decoration: none; }
+  .tweet-word .tweet-header img {
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-right: 2px; }
+  .tweet-word .tweet-body {
+    border-top: thin solid #cdc9c9;
+    font-size: 0.8em;
+    color: black;
+    margin-left: 52px; }
+  .tweet-word .tweet-body a:link {
+    margin-left: 52px;
+    text-decoration: none;
+    color: black; }
+  .tweet-word .username {
+    font-weight: bold;
+    text-align: left; }
+  .tweet-word .timestamp {
+    font-weight: bold;
+    font-size: 0.7em; }
+  .tweet-word .tweet-footer {
+    padding-top: 2px;
+    font-size: 0.7em;
+    background-color: #f5f5f5; }
+  .tweet-word .tweet-footer i {
+    margin-left: 52px; }
+  .tweet-word .location {
+    padding-left: 3px;
+    cursor: pointer; }
+
+/* For Frequent Words Style */
+#frequent-words-text {
+  border-top: thick solid #ffe4c4;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+/*Darrel Add*/
+#analysisText {
+  margin-left: 3px; }
+
+/*Darrel Add*/
+.btn-size {
+  width: 100px;
+  height: 40px;
+  margin-top: 5px; }
+
+.btn-cross {
+  margin-top: 5px;
+  height: 40px; }
+
+/*Darrel Add*/
+#event-monitor {
+  border-top: thick solid lightblue;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.box-body {
+  margin: 3px;
+  color: black;
+  font-size: 0.8em; }
+
+.word {
+  font-weight: bold; }
+
+.word-body {
+  border-bottom: thin solid #cdc9c9;
+  margin: none; }
+
+/* For Modal */
+.modal {
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  color: #191970;
+  position: fixed;
+  top: 30% !important;
+  left: 30% !important;
+  /*Darrel Add*/ }
+  .modal .modal-header {
+    padding-left: 5%; }
+  .modal .top {
+    border: thin solid #009688;
+    width: 464px;
+    height: 130px;
+    margin-top: 20px;
+    padding: 3%; }
+  .modal .padrow {
+    padding-left: 10px; }
+  .modal .modal-profilepic {
+    width: 50px;
+    height: 50px;
+    /*Darrel Add*/
+    margin-top: 30px; }
+  .modal .modal-information {
+    margin-bottom: 5px; }
+  .modal .modal-stats {
+    border: thin solid #009688;
+    width: 464px;
+    padding: 1%; }
+    .modal .modal-stats .stats-count {
+      font-weight: bold;
+      font-size: 1.5em;
+      margin-bottom: 5px; }
+    .modal .modal-stats .stats-words {
+      font-weight: bold; }
+  .modal .modal-body h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #009688; }
+  .modal .modal-body .modal-tweet-body {
+    overflow-y: auto;
+    overflow-x: hidden; }
+  .modal .align-text {
+    text-align: center;
+    color: #009688;
+    font-size: 1.2em;
+    font-weight: bold; }
+
+/* For Instagram */
+#instagram-form {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer; }
+
+.location-header {
+  color: #009688;
+  font-size: 1.8em;
+  margin-left: 30%; }
+
+.instagram-box {
+  width: 60px;
+  height: 100px;
+  background-color: white; }
+  .instagram-box .instagram-img img {
+    width: 50px;
+    height: 50px;
+    padding-bottom: 5px; }
+  .instagram-box .instagram-caption {
+    background-color: grey; }
